@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedStone Horizon</title>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=vt-KcterRKpeoM7yXy34aKt79d4lG47Xn812IFdbzeDCy1LYFTlFk92q6jp2Vu30qf0vjJ0YgwYvLAgC9JVWY1UdwETEhP3lUuzS5sGxKwnV8zrleUNDZn2ikHeh5-mTx19zYZJbt1_s9yfeDhMTFkGCeKvv-c6UeTPZPPuvK-P8sAaifxEC5iTLf3LfBBoAvwBzEugzwsepmt6LVShJ5VIzO73TPUWYsjrZmQ9mCEN1kQ7AwCDQ1Jh_UQqlgVdyrMx9mSedZXZeZvTG3W8QNmtCktFzpZSGJ8X_Ho0RpSOxNNbTNG88sa_BIgJYzDz0iyhSXSf39OLiXIFhON6RYI5xG7BxK2XERvL4wrS9ncLYAAqKtxfwc4W5DVrExqn85uImwy-ml77zlnE-ZvPzFWw2e26zUBkFz9iwtLXWsXVdfd-OJ7FagBmaF3QOFWtByz0J0nXyztDS3b8AFwhRk8s3zQF_Iv8hhFn3G1HtKKKNAQmIyss9P0gPSZN5Zy_TEfBkoKEVgi3k2lU7Xdk9pPXzbf0MwkJeM0lg_TUBLyY828wVXXYD7AlMzO-eLbmcnvLsbjNkQc7Uc9S9FEgPdRrGYbJgUIw_AI_R8GcF0KS4j43W3_wpa7lixnlkIfX08lNLrmVJP0g456tA2WgK_yyI2pvf9_ehNxIJQ-TD4IbqON4xoOs0ItSfEJ9GCZUKL5FVgxBPFXEnV1CIa8XnwmhEW16bymUTHsAuoJPc87NKgcfuR6JZQhb-GtrPNnXRpozpvDl1uvwZOmpUiqwD2LkBnPgRvpK8JHkiVQPDPyJKQCVYEaucOu268PHnevzNXMdRgtGlBe7EPeMGriSMZx-7idlR2E5sflpxjyGB4we-tbBQyph26Ewem4J8Tf3wlOrP9sxCf-8egEfO6_10H0GCpgldQnOMUMZTWTUo77wS8eSaFj5ybZ3oRh-21jQf4INnDMZKVtU9IixX_qY0GGVo3BDaYLEOqoft6xQvbCcQ2oSQXM8AD-8v7H-TMaksODp5iaJDEeqlIZehCvAwuNMLIYgxJyf53JGdQu8LKW7STUFgJpGcwB09Anzinqb21G6d-c4G1-82j5qcLDOBcnH400Tc1hAhRExJv-HAbNVIz8NAORHy2zRydPqQWlYZEDTuAD-Q2jvllQ70RGvPauYsg1dCulUi7R6_D2J-Ej9w_IsuYUZcWOsTHL9oLw_Kh010A_ZVjVCqp11GSGsha9uab4w9kD7McvbvICOoTdZW4t-RNuU88wr9iBlbZgVkxdJ1Mzt3728BP1rkiSMWIeaDd9fQgJg4oszOPqoMXJYmxuR9NvyZZk55nP_8B_G0puBwGLiAHgL2wl-8C3c2uSZDyOqd6H_lfOtncOG1f7sG7_0t_2tNQQtLNBioh5Kt7PqYY90nzvpWWvAIgpWNjZvbAXkrp98fVL2aCAfyjN8AlgxKCdu0cvn5fUJXlcg7htn9WA_FiqFKSq5aY_Bqf9oZMZI3yN517hT3_3R68UWJTlLQcj1bVo5hHaB3QU4EVcgHLX_FmMSXkVPZbOPYspjzlU8Kt6RqYrqtGI6YTD5Hc4UFwOVc4qqep_C-MEk3N5NT29fydjy7Qq-3xO-5-YyPQxAVyMigjC52m6og-KOuMSKc6HJzO6JzMFbbgkFdUXx9fqNORVNAKBp3iA-zbQ" nonce="75169d9b22118e679a06b3d973c8caa6" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9tYWlsLWF0dGFjaG1lbnQuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2F0dGFjaG1lbnQvdS8wLz91aT0yJmlrPWU1MDM1M2ZhMTAmYXR0aWQ9MC4xJnBlcm1tc2dpZD1tc2ctYTpyLTU0MDg0ODE0NjYzMDM0NDU3MjEmdGg9MTk1OWIyYmQ0ZDE0ZWNkNyZ2aWV3PWF0dCZkaXNwPXNhZmUmcmVhbGF0dGlkPTE5NTliMmJhNTA0NjlhYzA0ODQyJnp3JnNhZGRiYXQ9QU5HamRKLXJqaE5hU3IwNWp5cUUxazZtWHBncXctNHpydXFCUGprS1JDMlBzam9vZkRyeEJqbDdQS1pXZVdpQ0FrSWwxNlBvckIxNG42UXdFSnpPZTNzT2tpTUJfNmQyakxOTDBhVzRHM192eXU2SVFlMVNhYnYwM0JoSnpvUmEyeDhWREVhQ0ZfOGlGR0FGMTRDVExRYnktZ0tmNXhCaHc0SjY2c0MwVmo4elgyZTRja3pBQ2xRZFVDeU82TVhIWWw3ZDhaSDY2Q1V0SERxRndqaHMzTVU5TDlqbUZpREN2MEZSTnBMdURSNWFvcmdBV3c3MXJWcmU0VmxFbUFVX05QWjV3WktFZlpaS3gxLWVoYmVVbDhXeEd4OEFlTFdhcGg0aHVaSWk2V0Y2OWkxeEpyOTRnTXpNanp3NHcyakZnSkpaUE9Mc3RiVVNIdDF0MDJtcFpLcGdVWGlaNlhtSUo4LVZKSkIwamUxUkc1SUFMWWRPeXdac1JsdHJLOXNnVXpfbEkzT2YtSmY4VGJuNjZYMEVxRmdFMjZyeGJIQXJySmhFTWN3N1dPemJ4MnVxaG1OLU8tSHI4Z09CY0ZUNWFmRVdycWc3a3g2eE9IbXl3a3lZOUthcHNJSmRjM0RXLXp2aGhiTEQxaF8xMUxGUDNLZE5fb1pmak5SdmN5MHRtRFZqVUZ6NGFNOF9nOFFpeGU4eURRc25XOVJZVFZCOEpNT05yT05ORmlva1UwM0EtZXJibGhweDhFYTFIQWNDNUVsa0NxTVkzbkZvMFhWQmZScFBERkljRk1SWUtkOGJ5b2tVeDEwWXRDcUR3RHFLT3ZiMmtuMXBrUENjSWNJbGw1b09Ea3ZHNmNjOC1zSGY3eDV2b0twYWg3cHN0c2ZWNzJUQ2RSek13bjlfTUZrNnJFaE9McDlFWnU2dFY1VldibWtFQnB6OUQtMHRfbmlRYVNkMDZLdDQtVWg3NWt2cHlUdXZkSEF2VEhjTHJENG8zb0ZOVFo1X01lYmdpRC1ieWJDOGRweHF5bEwwSGFONkgwbGxuODF5cTdpYWdBX3Bhc1JuTVlQTmhjdWxpSVc3VUhCMTRjQTY3U2ZnN0dpcDN6U0xMY1otLVRnRUlzOE5SVml2Zkc2T0pFQ2FxYkFnM0JNaFg0RnZHS3pwM3hHQzhiSDJWc2w5dUtaTEZJU3VnVTF4M0hFN3hZdS1uaVIwX25rQmxRdm1GTE9CbWFIVFF1cTNDSmJmaVYzY091NzB5VFNuUkttX0ZKQUR3NzBJbUI1em0zUlNfWUJqeGVhSGVxYldEZ2hrZG9yZ2g1TEo2U2FiVEc2eTFyUFgwb2NoYVRHYXlHaVhuM19BemJN"/><style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+        .left {
+            background-color: #3F0B0B;
+            width: 50%;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .right {
+            background-color: #F6BAC3;
+            width: 50%;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            background-color: #3F0B0B;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 5px #ece6e6, 0px -5px 5px #ece6e6, 5px 0px 5px #ece6e6, -5px 0px 5px #ece6e6;
+            text-align: center;
+            color: #ece6e6;
+            width: 80%;
+        }
+        .box h1 {
+            margin-bottom: 10px;
+        }
+        .box p {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .box input {
+            width: 70%;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+        }
+        .box button {
+            background-color: #F6BAC3;
+            color: #3F0B0B;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        .box button:hover {
+            opacity: 0.8;
+        }
+        .hint {
+            margin-top: 20px;
+            text-align: center;
+            color: #ece6e6;
+            width: 80%;
+        }
+        .hint img {
+            width: 100%;
+            max-width: 300px;
+            margin-top: 10px;
+        }
+        .scroll {
+            width: 90%;
+            height: 200px;
+            background: linear-gradient(to bottom, #e3c28d, #d2a679);
+            border-radius: 10px;
+            border-top: 20px solid #b58b57;
+            border-bottom: 20px solid #b58b57;
+            position: relative;
+            text-align: left;
+            font-family: 'Allura', cursive;
+            color: #5a3e2b;
+            padding: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            transition: height 1s ease, width 1s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform-origin: top center;
+        }
+        .scroll-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1.5s ease, transform 1.5s ease;
+        }
+        .scroll.open .scroll-title {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .scroll.open {
+            height: 800px;
+            width: 95%;
+            animation: unroll 1.2s ease-out;
+        }
+        @keyframes unroll {
+            0% {
+                height: 200px;
+                transform: scaleY(0.5);
+            }
+            50% {
+                height: 800px;
+                transform: scaleY(0.8);
+            }
+            75% {
+                transform: scaleY(1.05);
+            }
+            100% {
+                transform: scaleY(1);
+            }
+        }
+        .scroll p {
+            opacity: 0;
+            transition: opacity 1.5s ease 0.5s, transform 1.5s ease 0.5s;
+            transform: translateY(20px);
+            font-size: 18px;
+            text-align: left;
+        }
+        .scroll.open p {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .scroll .title {
+            font-weight: bold;
+            text-align: left;
+            align-self: flex-start;
+        }
+        .content-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .seal {
+            width: 65px;
+            height: 65px;
+            background-color: #3F0B0B;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease;
+            padding: 3px;
+        }
+        .seal:hover {
+            transform: translateX(-50%) scale(1.1);
+        }
+        .seal img {
+            width: 90%;
+            height: 90%;
+            border-radius: 50%;
+        }
+        .mensagem {
+            text-align: center;
+            margin-top: 15px;
+            display: block;
+            font-size: 18px;
+        }
+        .mensagem.correta {
+            color: #468F03;
+        }
+        .mensagem.incorreta {
+            color: #AE0822;
+        }
+        .navigation {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            display: none;
+            justify-content: space-between;
+            padding: 0 20px;
+            opacity: 0;
+            transition: opacity 0.8s ease 1s;
+        }
+        .scroll.open .navigation {
+            display: flex;
+            opacity: 1;
+        }
+        .prev-page, .next-page {
+            font-size: 32px;
+            color: #3F0B0B;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .prev-page:hover, .next-page:hover {
+            transform: scale(1.2);
+        }
+        .content-page {
+            display: none;
+            width: 100%;
+        }
+        .content-page.active {
+            display: block;
+        }
+        .seal.disabled {
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+        .seal.disabled:hover {
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="box">
+                <h1>♦️RedStone Horizon♦️</h1>
+                <p>Enter the password to access the <strong>*Secret Document*</strong>:</p>
+                <br>
+                <input type="password" id="senha" placeholder="Digite a senha">
+                <button onclick="verificarSenha()">Access</button>
+                <span id="mensagem" class="mensagem"></span>
+            </div>
+            <div class="hint">
+                <h3>💡 Tip: The password is here...</h3>
+                <img src="https://raw.githubusercontent.com/thai-data/redstone/refs/heads/main/image%20(1).webp" alt="Dica da senha">
+            </div>
+        </div>
+        <div class="right">
+            <div class="scroll">
+                <div class="scroll-title">Profecia Horizon: By builders, for builders</div>
+                
+                <div class="content-container">
+                    <div id="content-page-1" class="content-page active">
+                        <p class="title">The Narratives </p>
+						<p><br></p>
+                        <p> A new era will come, and those who are attentive will see the signs. <b>RedStone</b> will awaken, bringing forth a <b>modular oracle</b> that will redefine <b>DeFi</b> and <b>RWAs</b>. Three paths will emerge: <b>RedStone Core, Classic, and X</b>, each with its own purpose. Its achievements will be undeniable: <b>over 70 blockchains, 1,250 assets, and 130 protocols</b> guided by <b>fast, precise, and unwavering price feeds</b>.  
+
+The prophecy also reveals its role in the future: <b>connecting RWAs to DeFi</b>, <b>enabling BTCfi</b> to strengthen <b>Bitcoin</b> in the <b>on-chain world</b>, and <b>providing essential data for LSTfi</b>. Then will come the call of the <b>RED token</b>. Its <b>staking</b> will sustain the ecosystem, rewarding those who strengthen the network through <b>EigenLayer</b> and <b>EigenPie</b>.  
+
+The barriers will fall. <b>Securitize</b> will choose <b>RedStone</b> as its <b>primary oracle</b>, bringing <b>RWAs from BlackRock, Apollo, and Hamilton Lane</b> into <b>DeFi</b>. And then, <b>the revolution will begin.</b>
+</p>
+                    </div>
+                    
+                    <div id="content-page-2" class="content-page">
+                        <p class="title">The Community</p>
+						<p><br></p>
+                        <p>It is written that RedStone will not conquer its destiny alone. To shape the future of DeFi, an army of Miners will emerge, forged in the pursuit of knowledge and driven by the fire of innovation. That is why <strong>RedStone Expeditions</strong> will be born, calling for the first explorers. <strong>Ore Diggers</strong> will emerge as pioneers, paving the way for <strong>Rock Breakers, Vein Masters, and Deep Miners</strong> to strengthen the chain. Missions will be accomplished, rewards will be earned, and one day, the first <strong>Mine King</strong> will be crowned, leading the community into the unknown.  
+
+But the journey will test their endurance. <strong>Expeditions</strong> will take Miners through the greatest trials, revealing challenges and hidden secrets. And when the <strong>RED token</strong> awakens, only the true forgers will be rewarded.  
+
+United by the same purpose, <strong>RedStone</strong> will grow through the strength of the community, through the unity of its <strong>Miners</strong>.
+
+						
+						</p>
+                    </div>
+                    
+                    <div id="content-page-3" class="content-page">
+                        <p class="title">The Right Choices</p>
+						<p><br></p>
+                        <p>Since the beginning, RedStone will make decisions that set it apart from market oracles. Instead of a single, closed model, it will adopt a modular design that allows developers to choose between <b>RedStone Core, Classic, and X</b>.
+
+Its strategic alliances will strengthen the tokenization of real-world assets, ensuring the trust of projects like <b>Securitize</b> and expanding its presence in the blockchain ecosystem. More assets will be protected, and more protocols will integrate its services.
+
+But its vision will go beyond oracles. With the rise of artificial intelligence, <b>CLARA</b> will emerge—a revolutionary framework for communication between autonomous agents, enabling secure and efficient exchanges through the AO Computer infrastructure.
+
+RedStone will also strengthen its economic security. With <b>RED token staking</b> integrated into <b>EigenLayer AVS</b>, the network will leverage billions of dollars in liquidity, ensuring decentralization and resilience against attacks.
+
+These choices will consolidate RedStone as a key player in DeFi and decentralization. Each decision will solidify its position, and every successful step will make its presence undeniable in the on-chain world.
+						
+						</p>
+                    </div>
+                    
+                    <div id="content-page-4" class="content-page">
+                        <p class="title">The Errors</p>
+						<p><br></p>
+                        <p>But as with any project, challenges will arise, and <b>Jalokim</b> will take advantage of this to spread confusion.
+
+The absence of a <b>roadmap</b> will lead some to question the paths of RedStone. Without a traditional roadmap, every path will be guided by constant adaptation, which will confuse those who seek absolute certainties.
+
+The period of the RedStone Expedition will follow a winding path through time. The sacred texts on the blog will speak of a journey divided into <b>three stages</b>, but its conclusion will stretch, and the wait for the end will lead many to question, "<b>Am I on the right path?</b>"
+
+The great day will come, but not everyone will find their names on the sacred list. <b>Uncertainty</b> will grow, and <b>frustration</b> will burn even stronger. However, <b>balance</b> will be restored.
+
+In the end, upon analyzing all the events, the team will realize that something has been wrong from the beginning. Everything will lead to a single name... <b>Jalokim</b>.
+						</p>
+                    </div>
+                    
+                    <div id="content-page-5" class="content-page">
+                        <p class="title">The Improvements</p>
+						<p><br></p>
+                        <p>The journey of RedStone will still require growth and adaptation. Its innovation will need to reach more people, expanding campaigns and strengthening its presence in <b>DeFi</b>.
+
+New <b>partnerships</b> will be essential. Integrating more protocols and chains will consolidate its role as an indispensable <b>oracle</b>.
+
+The path of the <b>Miners</b> should be clearer and more accessible. A more balanced structure will strengthen the community and encourage new <b>explorers</b>.
+
+<b>Transparency</b> will guide its evolution. With clear communication and strategic direction, RedStone will continue to expand, establishing itself as a reference in the <b>on-chain</b> world.
+						</p>
+                    </div>
+                    
+                    <div id="content-page-6" class="content-page">
+                        <p class="title">The Final Trial</p>
+						<p><br></p>
+                        <p>The prophecy will remain alive, unfolding with each new achievement. RedStone’s true peak is yet to come, surpassing all other <b>oracles</b>. It will expand across more blockchains and be chosen by the leading <b>RWA</b> and <b>Bitcoin protocols</b>. Its data will fuel tokenized markets, becoming the foundation of the new <b>on-chain era</b>.
+
+The <b>Miners</b> will grow in strength and numbers. One day, the <b>Mine King</b> will rise, becoming the guardian of the <b>Miners</b>.
+
+Beyond <b>oracles</b>, <b>CLARA</b> will become a beacon, recognized by the greatest names in technology and decentralization, positioning RedStone at the forefront of <b>AI</b> and <b>crypto integration</b>.
+						</p>
+                    </div>
+                    
+                    <div id="content-page-7" class="content-page">
+                        <p class="title">The Curse</p>
+						<p><br></p>
+                        <p><b><i>"Whoever reveals this knowledge before its time, without fully understanding its meaning, will be nothing more than a herald of their own downfall."</i></b>
+						</p>
+                    </div>
+                </div>
+                
+                <div id="seal" class="seal disabled" onclick="toggleScroll()">
+                    <img src="https://cdn.prod.website-files.com/67519197ce9eaef4601a6287/67519197ce9eaef4601a62cf_redstone%20symbol.svg" alt="Selo do pergaminho">
+                </div>
+                
+                <div class="navigation">
+                    <div class="prev-page" onclick="prevPage()">←</div>
+                    <div class="next-page" onclick="nextPage()">→</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Variável para controlar se o acesso está liberado
+        let acessoLiberado = false;
+        
+        function toggleScroll() {
+            // Só permite abrir o pergaminho se o acesso estiver liberado
+            if (acessoLiberado) {
+                document.querySelector(".scroll").classList.toggle("open");
+            }
+        }
+        
+        function verificarSenha() {
+            var senha = document.getElementById("senha").value;
+            var mensagem = document.getElementById("mensagem");
+            var sealElement = document.getElementById("seal");
+            
+            // Verifica a senha independente de maiúsculas ou minúsculas
+            if (senha.toLowerCase() === "jalokim") {
+                mensagem.textContent = "Password correct! Click on the seal on the parchment to open it";
+                mensagem.className = "mensagem correta";
+                
+                // Libera o acesso ao pergaminho
+                acessoLiberado = true;
+                
+                // Remove a classe disabled do selo
+                sealElement.classList.remove("disabled");
+                
+                // Adiciona uma pequena animação no selo
+                sealElement.style.animation = "pulse 0.5s ease";
+                setTimeout(() => { sealElement.style.animation = ""; }, 500);
+            } else {
+                mensagem.textContent = "Incorrect password, Jalokim is laughing at you hahahahaha...";
+                mensagem.className = "mensagem incorreta";
+                
+                // Bloqueia o acesso ao pergaminho
+                acessoLiberado = false;
+                
+                // Adiciona a classe disabled ao selo
+                sealElement.classList.add("disabled");
+                
+                // Garante que o pergaminho esteja fechado
+                document.querySelector(".scroll").classList.remove("open");
+            }
+        }
+        
+        let currentPage = 1;
+        const totalPages = 7;
+        
+        function nextPage() {
+            // Oculta a página atual
+            document.getElementById(`content-page-${currentPage}`).classList.remove('active');
+            
+            // Avança para a próxima página ou volta para a primeira
+            currentPage = currentPage < totalPages ? currentPage + 1 : 1;
+            
+            // Mostra a nova página atual
+            document.getElementById(`content-page-${currentPage}`).classList.add('active');
+        }
+        
+        function prevPage() {
+            // Oculta a página atual
+            document.getElementById(`content-page-${currentPage}`).classList.remove('active');
+            
+            // Volta para a página anterior ou vai para a última
+            currentPage = currentPage > 1 ? currentPage - 1 : totalPages;
+            
+            // Mostra a nova página atual
+            document.getElementById(`content-page-${currentPage}`).classList.add('active');
+        }
+    </script>
+</body>
+</html>
